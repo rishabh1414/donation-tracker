@@ -1,0 +1,25 @@
+<header>
+    <nav>
+        <h3>All Creator</h3>
+        <a href="/">
+            <div class="logo"><img height="80px" src="/img/logo01.png" alt=""></div>
+        </a>
+        <ul>
+            <% if(user) {%>
+                <% if(user.isAdmin) {%>
+                    <li><a href="/user/all-users-donation">All Donation</a></li>
+                    <% }else{ %>
+                        <li><a href="/user/all-donation">My Donation</a></li>
+                        <% } %>
+                            <li>
+                                <form id="logout" action="/logout" method="post">
+                                    <a onclick="document.getElementById('logout').submit()">Logout</a>
+                                </form>
+                            </li>
+                            <% }else{ %>
+                                <li><a href="/login">Login</a></li>
+                                <li><a href="/register">Register</a></li>
+                                <% } %>
+        </ul>
+    </nav>
+</header>

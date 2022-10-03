@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| All Donation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="shortcut icon" href="/img/logo01.png" type="image/x-icon">
+
+</head>
+
+</head>
+
+<body>
+    <%- include('../navbar') %>
+        <section class="allDonation">
+            <h2>Donation History</h2>
+            <div class="tableBox">
+                <table class="table table-striped">
+                    <tr>
+                        <th>User Name</th>
+                        <th>Creator Name</th>
+                        <th>Currency</th>
+                        <th>Donation Amount</th>
+                        <th>Name</th>
+                        <th>Comments</th>
+                        <th>Date</th>
+                    </tr>
+                    <% usersData.forEach(data=> { %>
+                        <tr>
+                            <td>
+                                <%= data.userName %>
+                            </td>
+                            <td class="currencyRow">
+                                <a href="#" style="color: #10c851;">
+                                    <%=data.creatorId.userName %>
+                                </a>
+                            </td>
+                            <td>
+                                <%= data.currency %>
+                            </td>
+                            <td>
+                                <%= data.amount %>
+                            </td>
+                            <td>
+                                <%= data.name %>
+                            </td>
+                            <td>
+                                <q>
+                                    <%= data.comment %>
+                                </q>
+                            </td>
+                            <td>
+                                <%= moment(data.createdAt).format('MMMM Do YYYY, h:mm:ss a'); %>
+                            </td>
+
+                        </tr>
+                        <% }); %>
+                </table>
+            </div>
+        </section>
+</body>
+
+</html>

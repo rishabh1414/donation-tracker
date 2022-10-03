@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background-color: #d8f3dc;
+
+}
+
+/* *     Navbar Start  */
+
+nav {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 2%;
+    background-color: #202020;
+    color: white;
+    margin: 10px 15px;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav h3 {
+    font-size: 30px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    top: -5px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    color: white;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 5px 10px;
+    font-size: 20px;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    margin: 0px 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #76c893, #40916c)1;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    background: linear-gradient(to right,
+            #76c893,
+            #40916c);
+}
+
+/* *---------------Login ------*/
+
+#login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login span {
+    color: red;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.loginForm {
+    /* border: 1px solid gray; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.loginForm h3 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.loginForm input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.loginForm input:focus {
+    outline-color: green;
+}
+
+.loginForm input::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.loginForm button {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.loginForm button {
+    background: linear-gradient(to right, #76c893, #b5e48c);
+    border: 0.5px solid gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.loginForm p {
+    color: grey;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.loginForm p a {
+    color: #40916c;
+    font-weight: 400;
+}
+
+/* *---------------HomePage-------------- */
+
+#home {
+    padding: 90px 60px;
+}
+
+#home h2 {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.creator {
+    border: 1px solid black;
+    display: flex;
+    margin: 10px 10%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creator a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    /* border: 1px solid red; */
+    margin: 10px 15px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img {
+    height: 350px;
+    width: 310px;
+}
+
+.card h4 {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.card p {
+    color: grey;
+}
+
+/** ---------------------- Donation Screen------------ */
+
+.donate {
+    min-height: 80vh;
+    margin: 100px;
+    margin-bottom: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.topBar {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 7px;
+}
+
+.topBar a {
+    color: black;
+}
+
+.content {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.content h4 {
+    font-size: 35px;
+    font-weight: 200;
+    margin-left: 100px;
+}
+
+.donationForm {
+    width: 100%;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.donationForm form {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formInput input {
+    width: 600px
+}
+
+.donationForm button {
+    background: linear-gradient(to right, #76c893, #b5e48c);
+    border: 0.5px solid gray;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px 20px;
+    width: 200px;
+}
+
+.loginBtn {
+    background: linear-gradient(to right, #76c893, #b5e48c);
+    border: 0.5px solid gray;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 7px 20px;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+/* *------------------All Donation --------------------*/
+.allDonation {
+    background-color: white;
+    margin: 0 40px;
+    margin-top: 30px;
+    padding: 20px 7%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.allDonation h2 {
+    font-weight: 200;
+    margin: 40px 0px;
+}
+
+.tableBox {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.tableBox table tr th {
+    background-color: #202020;
+    color: white !important;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.tableBox table tr th,
+td {
+    text-align: center;
+}
+
+
+
+.tableBox table tr td {
+    border: 0.1px solid rgba(128, 128, 128, 0.19);
+    padding: 5px;
+    width: 280px;
+
+}

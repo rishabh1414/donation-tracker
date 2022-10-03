@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="shortcut icon" href="/img/logo01.png" type="image/x-icon">
+    <title>| All Creators</title>
+</head>
+
+<body>
+    <%- include('navbar') %>
+
+        <section id="home">
+            <h2>Recommended Creators</h2>
+
+            <div class="creator">
+                <% creator.forEach(creator=> { %>
+                    <a href="/user/donation/<%= creator.id %> ">
+                        <div class="Card">
+                            <div class="card">
+                                <img src="/img/<%=creator.profileUrl %>" alt="">
+                                <h4>
+                                    <%= creator.userName %>
+                                </h4>
+                                <p>
+                                    <%= creator.profession %>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <% }); %>
+            </div>
+
+        </section>
+</body>
+
+</html>

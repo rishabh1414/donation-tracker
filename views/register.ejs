@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="shortcut icon" href="/img/logo01.png" type="image/x-icon">
+    <title>| Register</title>
+
+</head>
+
+<body>
+    <%- include('navbar') %>
+        <section id="login">
+            <div>
+                <form action="/register" method="post" class="loginForm">
+                    <h3>Register </h3>
+                    <% if (messages.error){ %>
+                        <span class="error">
+                            <%= messages.error %>
+                        </span>
+                        <% } %>
+                            <input type="text" value="<%= messages.username  %>" name="username" placeholder="Username">
+                            <input type="text" name="password" placeholder="Password">
+                            <input type="text" name="cpassword" placeholder="Confirm Password">
+                            <button type="submit">Register</button>
+                            <p>Already have an account? <a href="/login">Login here</a></p>
+                </form>
+            </div>
+        </section>
+</body>
+
+</html>
