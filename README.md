@@ -1,4 +1,4 @@
-# donation-tracker
+# Donation-tracker
 
 
 PROJECT:  Donation tracker    
