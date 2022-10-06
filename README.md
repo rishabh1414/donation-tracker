@@ -14,6 +14,7 @@ Librares used :
  5. express-flash  -- ( Flash is an extension of connect-flash with the ability to define a flash message and render it without redirecting the request.)
  6. express-session
  7. moment  -- ( MomentJS is a JavaScript library which helps in parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way.)
+ 
  8. mongoose
  9  passport js  -- (js. Passport's sole purpose is to authenticate requests, which it does through an extensible set of plugins known as strategies. Passport does not mount routes or assume any particular database schema, which maximizes flexibility and allows application-level decisions to be made by the developer.)
  
