@@ -5,7 +5,8 @@ PROJECT:  Donation tracker
 Duration: 1-2 week
 
 Technologies Used: ejs, JavaScript, node, express, mongo dB
-librares used :
+
+Librares used :
  1. bcrypt ( bcrypt allows building a password security platform that can evolve alongside hardware technology to guard against the threats that the future may bring, such as attackers having the computing power to crack passwords twice as fast.)
  2. dotenv
  3. ejs  -- ( EJS (Embedded JavaScript Templating) is one of the most popular template engines for JavaScript. As the name suggests, it lets us embed JavaScript code in a template language that is then used to generate HTML )
@@ -18,6 +19,8 @@ librares used :
  
  10. passport-local
     
+   # About Donation-Tracker
+   
 •	I have created donation tracker app in this you can donate any amount to any creator
 •	To use you have to first register yourself and login into app, after login you will redirect to home page 
 •	If you want to donate any amount to following creators you have to be login first otherwise you will redirect to login page 
